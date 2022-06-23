@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    {{>menuBtn}}
+    {{>hamburgerMenu}}
+    {{>overlay}}
+    {{>nav}}
+    {{>aboutSection}}
+    <section class="toolbox__section">
+        <h1>My Toolbox &#38; Things I Can Do</h1>
+        <p>Here are some of the skills and technologies I use to deploy websites:</p>
+        {{>toolbox}}
+        <h2>Currently working on:</h2>
+        <h3>Improving my vanilla JavaScript skills and learning understanding more about JavaScript theory. I am also learning the React library and how to use hooks in order to maximize website performance. </h3>
+    </section>
+    <script type="module" src="js/hamburgerAnimation.js"></script> 
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* portfolio section */
+.portfolio-heading {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+#long-description {
+    width: 85rem;
+    margin-bottom: 5rem;
+    color: $off-white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(42, 207, 216, 0.114);
+    height: 100%;
+    width: 100%;
+    clip-path: circle(350px at 75% 60%);
+}
+
+@media (max-width: 1050px) {
+    #long-description {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .portfolio-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,24 @@
+.option__icon {
+    fill: rgb(216, 216, 216);
+    height: 30px;
+    width: 30px;
+    padding: 3rem 3rem;
+    transition: all 0.5s;
+
+    &:hover {
+        fill: $color-primary;
+    }
+}
+
+.home__icon {
+    height: 55px;
+    width: 55px;
+    fill: rgb(148, 201, 223);
+    transition: all 0.5s;
+    padding: 2rem;
+}
+
+.home__icon:hover {
+    fill: rgb(99, 175, 252);
+    transform: scale(1.05);
+}

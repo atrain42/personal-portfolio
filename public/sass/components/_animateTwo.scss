@@ -1,0 +1,101 @@
+/* Second line of text in header*/
+.animateNext {
+    font-size: 65px;
+    margin: 5px 0 0;
+    white-space: nowrap;
+    z-index: 3;
+  
+    & span {
+        display: inline-block;
+        color: $off-white;
+        opacity: 0;
+        transform: translate(200px, -100px) scale(2);
+        animation: pop 1s forwards;
+    
+        &:nth-of-type(1) {
+            animation-delay: 1.5s;
+        }
+    
+        &:nth-of-type(2) {
+            animation-delay: 1.6s;
+        }
+    
+        &:nth-of-type(3) {
+            animation-delay: 1.7s;
+        }
+
+        &:nth-of-type(4) {
+            animation-delay: 1.8s;
+        }
+        
+        &:nth-of-type(5) {
+            animation-delay: 1.9s;
+        }
+        
+        &:nth-of-type(6) {
+            animation-delay: 2.0s;
+        }
+
+        &:nth-of-type(7) {
+            animation-delay: 2.1s;
+        }
+        
+        &:nth-of-type(8) {
+            animation-delay: 2.2s;
+        }
+        
+        &:nth-of-type(9) {
+            animation-delay: 2.3s;
+        }
+
+        &:nth-of-type(10) {
+            animation-delay: 2.4s;
+        }
+        
+        &:nth-of-type(11) {
+            animation-delay: 2.5s;
+        } 
+    }
+}
+ 
+@media (max-width: 1265px) {
+    .animateNext {
+      font-size: 60px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .animateNext {
+      font-size: 75px;
+    }
+}
+
+@media (max-width: 850px) {
+    .animateNext {
+      font-size: 60px;
+    }
+  }
+
+@media (max-width: 700px) {
+    .animateNext {
+      font-size: 50px;
+    }
+}
+
+@media (max-width: 525px) {
+    .animateNext {
+      font-size: 45px;
+    }
+}
+
+@media (max-width: 500px) {
+    .animateNext {
+      font-size: 35px;
+    }
+}
+
+@media (max-width: 375px) {
+    .animateNext {
+      font-size: 30px;
+    }
+}

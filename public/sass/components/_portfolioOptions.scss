@@ -1,0 +1,114 @@
+/* Portfolio options */
+.option__container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 3rem;
+
+    &-item {
+        // height: 35rem;
+        width: 40rem;
+        border-radius: 40px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.277);
+        padding: 8rem 5rem;
+        background-color: #bbb;
+        z-index: 3;
+      
+        position: relative;
+
+        &:nth-child(1) {
+            margin-right: 2.5rem;
+        }
+
+        &:nth-child(2) {
+            margin-left: 2.5rem;
+        }
+    }
+}
+
+.option__content {
+
+    & h1 {
+        font-family: "Montserrat", sans-serif;
+        color: rgb(30, 30, 30);
+        font-size: 3rem;
+        z-index: 3;
+        position: relative;
+    }
+
+    & p {
+        color: rgb(30, 30, 30);
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.8;
+        text-align: left;
+        // width: 40rem;
+        z-index: 3;
+        position: relative;
+    }
+}
+
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background-color: #a0e5f331;
+    clip-path: circle(35% at 70% 30%);
+    z-index: 2;
+}
+
+.overlay--two {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 75%;
+    background-color: #a0baf331;
+    clip-path: circle(35% at 70% 70%);
+    z-index: 2;
+}
+  
+
+@media (hover: hover) and (pointer: fine) {
+    .underline:hover::before {
+      left: 0;
+      right: auto;
+      width: 100%;
+      cursor: pointer;
+    }
+}
+
+
+
+@media (max-width: 1150px) {
+    .option__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-item {
+            width: 55vw;
+            // height: auto;
+
+            &:nth-child(1) {
+                margin-right: 0rem;
+                margin-bottom: 5rem;
+            }
+    
+            &:nth-child(2) {
+                margin-left: 0rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .option__container {
+        padding-left: 0rem;
+    }
+}

@@ -1,0 +1,70 @@
+/* First line of text in header */
+.animate {
+  font-size: 65px;
+  margin: 5px 0 0;
+  white-space: nowrap;
+  z-index: 3;
+
+  & span {
+    display: inline-block;
+    color: $off-white;
+    opacity: 0;
+    transform: translate(200px, -100px) scale(2);
+    animation: pop 0.7s forwards;
+
+    &:nth-of-type(1) {
+      animation-delay: 0.2s;
+    }
+
+    &:nth-of-type(2) {
+      animation-delay: 0.3s;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: 0.4s;
+    }
+
+  }
+}
+
+@media (max-width: 1265px) {
+  .animate {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .animate {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 850px) {
+  .animate {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .animate {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 525px) {
+  .animate {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 500px) {
+  .animate {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 375px) {
+  .animate {
+    font-size: 30px;
+  }
+}

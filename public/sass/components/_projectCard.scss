@@ -1,0 +1,174 @@
+/* Render Project Cards */
+.project__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 3rem;
+    grid-gap: 23px;
+    position: relative;
+    z-index: 1;
+
+
+    &-item {
+        background-color: rgb(71, 83, 85);
+        box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.383); 
+        transition: all 1s;
+        position: relative;
+        width: 27vw;
+
+        &:hover {
+            transform: translateY(-5px)
+        }
+    }
+}
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(79, 118, 120, 0.365);
+    height: 100%;
+    width: 100%;
+    clip-path: circle(150px at 70% 65%);
+}
+
+.color-overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(58, 83, 127, 0.32);
+    height: 100%;
+    width: 100%;
+    clip-path: circle(100px at 20% 25%);
+}
+
+.color-overlay-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(72, 58, 127, 0.32);
+    height: 100%;
+    width: 100%;
+    clip-path: circle(75px at 20% 85%);
+}
+
+.color-overlay-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(72, 58, 127, 0.32);
+    height: 100%;
+    width: 100%;
+    clip-path: circle(75px at 20% 15%);
+}
+
+.color-overlay-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(79, 118, 120, 0.365);
+    height: 100%;
+    width: 100%;
+    clip-path: circle(100px at 25% 75%);
+}
+
+.color-overlay-6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(58, 83, 127, 0.32);
+    height: 100%;
+    width: 100%;
+    clip-path: circle(150px at 40% 50%);
+}
+
+.project__content {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+    position: relative;
+
+    & a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: rgb(0, 17, 80);
+        transition: all 1s;
+        margin-bottom: 7rem;
+
+        &:hover {
+            cursor: pointer;
+            color: rgb(202, 202, 236);
+        }
+    }
+
+
+    & p {
+        font-size: 1.5rem;
+        color: rgb(0, 0, 0);
+        margin-bottom: 3rem;
+    }
+}
+  
+.bold-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: $off-white;
+    margin-bottom: 2rem;
+}
+
+/* icon container */
+.icon__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 4;
+}
+
+@media (max-width: 1376px) {
+    .project__card {
+        margin: 0 auto;
+        justify-items: center;
+        column-gap: 0rem;
+        width: 85vw;
+        padding-left: 0rem;
+
+        &-item {
+            width: 26.5vw;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .project__card {
+        grid-template-columns: 1fr 1fr;
+        &-item {
+            width: 35rem;
+        }
+    }
+}
+
+@media (max-width: 875px) {
+    .project__card {
+        grid-template-columns: 1fr 1fr;
+        &-item {
+            width: 38vw;
+        }
+    }
+}
+
+@media (max-width: 675px) {
+    .project__card {
+        grid-template-columns: 1fr;
+        &-item {
+            width: 75vw;
+        }
+    }
+}

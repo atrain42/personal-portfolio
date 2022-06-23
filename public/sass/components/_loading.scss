@@ -1,0 +1,67 @@
+.loader__outer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(62, 75, 89);
+    z-index: 1000;
+}
+.loader__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    z-index: 151;
+}
+  
+.dash {
+    margin: 0 15px;
+    width: 35px;
+    height: 15px;
+    border-radius: 8px;
+    background: #b5e5ff;
+    box-shadow: 0 0 10px 0 #f6efff;
+}
+  
+.uno {
+    margin-right: -18px;
+    transform-origin: center left;
+    animation: spin 3s linear infinite;
+}
+  
+.dos {
+    transform-origin: center right;
+    animation: spin2 3s linear infinite;
+    animation-delay: 0.2s;
+}
+  
+.tres {
+    transform-origin: center right;
+    animation: spin3 3s linear infinite;
+    animation-delay: 0.3s;
+}
+  
+.cuatro {
+    transform-origin: center right;
+    animation: spin4 3s linear infinite;
+    animation-delay: 0.4s;
+}
+  
+.waviy {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(0.2s * var(--i));
+}

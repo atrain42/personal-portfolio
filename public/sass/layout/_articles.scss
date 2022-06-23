@@ -1,0 +1,49 @@
+#articles {
+    position: relative;
+}
+
+.article-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(162, 107, 205, 0.114);
+    height: 100%;
+    width: 100%;
+    clip-path: circle(125px at 25% 20%);
+}
+
+.article-overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(107, 194, 205, 0.114);
+    height: 100%;
+    width: 100%;
+    clip-path: circle(200px at 65% 60%);
+}
+
+
+
+@media (max-width: 1376px) {
+    #articles {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    #articles {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    #articles {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+}

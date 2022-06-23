@@ -1,0 +1,35 @@
+/* classes for intersection observers */
+.section--hidden {
+    opacity: 0;
+    transform: translateY(12rem);
+}
+
+.in-left {
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(-15%);
+    z-index: 2;
+}
+
+.in-left.mergeLeft {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+}
+
+.in-right {
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(15%);
+    z-index: 2;
+}
+
+.in-right.mergeRight {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+}
+
+.percent-animate {
+    animation: animate 4s ease-in-out forwards;
+}

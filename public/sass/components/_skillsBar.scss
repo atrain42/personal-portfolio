@@ -1,0 +1,101 @@
+/* skills bars */
+.container {
+  position: relative;
+  width: 500px;
+
+
+  &__skills {
+    position: relative;
+    margin: 40px 0;
+
+    & span {
+      position: relative;
+      width: 110px;
+      text-align: right;
+      color: #fff;
+      margin-top: -2px;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.75rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__percent {
+    position: relative;
+    width: calc(100% - 25px);
+    height: 5px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+
+    &-progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 100%;
+      border-radius: 10px;      
+      box-shadow: inset 0 0 2px #000;
+      transform: all 3s;
+    }
+  }
+}
+
+.percent-animate {
+  animation: animate 4s ease-in-out forwards;
+}  
+
+.container__skills:nth-child(1)
+  .container__percent
+  .container__percent-progress {
+  background: rgb(32, 52, 128);
+}
+
+.container__skills:nth-child(2)
+  .container__percent
+  .container__percent-progress {
+  background: rgb(19, 62, 162);
+}
+
+.container__skills:nth-child(3)
+  .container__percent
+  .container__percent-progress {
+  background: rgb(21, 96, 157);
+}
+
+.container__skills:nth-child(4)
+  .container__percent
+  .container__percent-progress {
+  background: rgb(44, 145, 196);
+}
+
+.container__skills:nth-child(5)
+  .container__percent
+  .container__percent-progress {
+  background: $color-primary;
+}
+
+@media (max-width: 1376px) {
+  .container__percent {
+    width: calc(100% - 40px)
+  }
+}
+
+@media (max-width: 1150px) {
+  .container {
+    width: 82.5vw;
+  }
+  .container__percent {
+    width: calc(100% - 2vw)
+  }
+  
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 85vw;
+  }
+
+}
