@@ -130,6 +130,12 @@ body {
   padding: 1rem 0;
   cursor: pointer;
 }
+.nav__container-item-link:active {
+  color: rgb(255, 36, 72);
+}
+.nav__container-item-link:focus {
+  color: rgb(255, 36, 72);
+}
 
 hr {
   height: 0.5px;
