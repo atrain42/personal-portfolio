@@ -19,8 +19,6 @@ hbs.registerPartials(sectionsPath);
 
 app.use(express.static(publicDirectoryPath));
 
-// app.use(express.static(path.join(__dirname, "../public/css")));
-
 app.get("", (req, res) => {
   res.render("index", {
     articleArray: [
