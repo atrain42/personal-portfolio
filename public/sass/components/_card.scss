@@ -106,12 +106,12 @@
 }
 
 .hide-card {
-    transform: scale(0.95);
+    opacity: 0;
     transition: all 2s;
 }
 
 .hide-card.animate-card {
-    transform: scale(1);
+    opacity: 1;
 }
 
 

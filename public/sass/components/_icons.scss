@@ -16,9 +16,17 @@
     fill: rgb(148, 201, 223);
     transition: all 0.5s;
     padding: 2rem;
+    z-index: 2000;
 }
 
 .home__icon:hover {
     fill: rgb(99, 175, 252);
     transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .home__icon {
+        height: 45px;
+        width: 45px;
+    }
 }

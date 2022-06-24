@@ -54,3 +54,15 @@ hr {
     z-index: 100;
     transform: rotate(90deg);
 }
+
+@media (max-width: 1000px) {
+    .nav__container-sub {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav__container {
+        height: 7.5rem;
+    }
+}

@@ -78,27 +78,3 @@ const skillsPercentObserver = new IntersectionObserver(
 skillPercentageStatus.forEach((bar) => {
   skillsPercentObserver.observe(bar);
 });
-
-// Fade in articles on scroll
-const articles = document.querySelectorAll(".card__container-item");
-
-const articleSpawnObserver = new IntersectionObserver(
-  function (entries, articleSpawnObserver) {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-
-      if (entry.isIntersecting) {
-        entry.target.classList.add("animate-card");
-        articleSpawnObserver.unobserve(entry.target);
-        return;
-      }
-    });
-  },
-  {
-    threshold: 0.5,
-  }
-);
-
-articles.forEach((article) => {
-  articleSpawnObserver.observe(article);
-});
