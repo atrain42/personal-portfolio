@@ -1,10 +1,3 @@
-// Render a loading page that disappears once all elements of the page are loaded in
-const loader = document.querySelector(".loader__outer");
-
-window.addEventListener("load", function () {
-  loader.style.display = "none";
-});
-
 /* Show menu on hamburger button press */
 const menuBtn = document.querySelector(".fancy-burger");
 const hamburgerMenu = document.querySelector(".menu__container");

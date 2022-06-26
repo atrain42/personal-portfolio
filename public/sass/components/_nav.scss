@@ -39,17 +39,22 @@
                 &:hover {
                     color: $color-primary;
                     padding: 1rem 0;
+                    text-decoration: none;
                     cursor: pointer;
                 }
 
                 &:active {
-                    color: rgb(255, 36, 72);
+                    color: $color-primary;
+                    padding: 1rem 0;
+                    text-decoration: none;
                 }
 
                 &:focus {
-                    color: rgb(255, 36, 72);
-
+                    color: $color-primary;
+                    padding: 1rem 0;
+                    text-decoration: none;
                 }
+
             }
         }
     }
