@@ -211,6 +211,10 @@ hr {
   margin-top: 10px;
 }
 
+.text {
+  width: 100%;
+}
+
 .overlay-three {
   position: absolute;
   top: 0;
@@ -263,12 +267,28 @@ hr {
     margin-top: 10rem;
   }
 
-  .text {
-    padding-left: 4rem;
+  .message {
+    font-size: 1rem;
+  }
+
+  .scroll h2 {
+    font-size: 1.5rem;
+  }
+  .scroll p {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 350px) {
+  .header {
+    padding-top: 15rem;
+  }
+  .header img {
+    height: 27.5rem;
+    width: 27.5rem;
   }
 
   .message {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 /* About section */
@@ -699,6 +719,12 @@ footer h3 {
   #footer--image {
     height: 30rem;
     width: 30rem;
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    -webkit-clip-path: inset(0px round 0px 0px 0px 0px);
+    clip-path: inset(0px round 0px 0px 0px 0px);
   }
 }
 @media (max-width: 475px) {
@@ -1352,7 +1378,7 @@ footer h3 {
 .startup__content h2 {
   font-family: "Montserrat", sans-serif;
   color: rgb(174, 200, 206);
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   margin-bottom: 0.5rem;
 }
 .startup__content h3 {
@@ -1364,6 +1390,10 @@ footer h3 {
 .startup__content p {
   font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 4rem;
+}
+.startup__content a {
+  color: #eee;
+  font-size: 1.75rem;
 }
 .startup__content-text {
   display: flex;
@@ -1412,13 +1442,21 @@ footer h3 {
   z-index: 1000;
 }
 
-.loader__container {
+.loader__bin {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader__container {
+  display: flex;
   z-index: 151;
+  margin-bottom: 1.5rem;
 }
 
 .dash {
@@ -1455,10 +1493,7 @@ footer h3 {
 }
 
 .waviy {
-  position: absolute;
-  top: 57%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 1.5rem;
 }
 
 .waviy span {
@@ -1471,6 +1506,26 @@ footer h3 {
   animation-delay: calc(0.2s * var(--i));
 }
 
+@media (max-width: 500px) {
+  .dash {
+    margin: 0 12px;
+    width: 25px;
+    height: 7.5px;
+  }
+  .dash:nth-child(1) {
+    margin: 0px 0px;
+  }
+  .dash:nth-child(2) {
+    margin-left: 0px;
+  }
+
+  .waviy {
+    top: 55%;
+  }
+  .waviy span {
+    font-size: 15px;
+  }
+}
 .overlay {
   width: 100vw;
   height: 100vh;
@@ -1490,6 +1545,7 @@ footer h3 {
   margin: 5px 0 0;
   white-space: nowrap;
   z-index: 3;
+  width: 100%;
 }
 .animate span {
   display: inline-block;
@@ -1535,12 +1591,17 @@ footer h3 {
 }
 @media (max-width: 500px) {
   .animate {
-    font-size: 40px;
+    font-size: 37.5px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .animate {
     font-size: 30px;
+  }
+}
+@media (max-width: 350px) {
+  .animate {
+    font-size: 25px;
   }
 }
 /* Second line of text in header*/
@@ -1549,6 +1610,7 @@ footer h3 {
   margin: 5px 0 0;
   white-space: nowrap;
   z-index: 3;
+  width: 100%;
 }
 .animateNext span {
   display: inline-block;
@@ -1618,12 +1680,17 @@ footer h3 {
 }
 @media (max-width: 500px) {
   .animateNext {
-    font-size: 40px;
+    font-size: 37.5px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .animateNext {
     font-size: 30px;
+  }
+}
+@media (max-width: 350px) {
+  .animateNext {
+    font-size: 25px;
   }
 }
 /* Third line of text in header */
@@ -1632,6 +1699,7 @@ footer h3 {
   margin: 5px 0 0;
   white-space: nowrap;
   z-index: 3;
+  width: 100%;
 }
 .animateLast span {
   display: inline-block;
@@ -1710,12 +1778,17 @@ footer h3 {
 }
 @media (max-width: 500px) {
   .animateLast {
-    font-size: 40px;
+    font-size: 37.5px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .animateLast {
     font-size: 30px;
+  }
+}
+@media (max-width: 350px) {
+  .animateLast {
+    font-size: 25px;
   }
 }
 /* bouncing headers */

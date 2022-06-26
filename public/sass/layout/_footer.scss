@@ -113,12 +113,17 @@ footer h3 {
         height: 30rem;
         width: 30rem;
     }
+}
 
+@media (max-width: 500px) {
+    .footer {
+        -webkit-clip-path: inset(0px round 0px 0px 0px 0px);
+        clip-path: inset(0px round 0px 0px 0px 0px);
+    }
 }
 
 @media (max-width: 475px) {
     footer h2 {
         font-size: 2.75rem;
     }
-
 }

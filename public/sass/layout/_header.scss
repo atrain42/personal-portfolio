@@ -53,6 +53,10 @@
     }
 }
 
+.text {
+    width: 100%;
+}
+
 
 .overlay-three {
     position: absolute;
@@ -111,11 +115,32 @@
         }
     }
 
-    .text {
-        padding-left: 4rem;
-    }
-
     .message {
         font-size: 1rem;
     }
+
+    .scroll {
+        & h2 {
+            font-size: 1.5rem;
+        }
+
+        & p {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .header {
+        padding-top: 15rem;
+        & img {
+            height: 27.5rem;
+            width: 27.5rem
+        }
+    }
+
+    .message {
+        font-size: 0.8rem;
+    }
+    
 }

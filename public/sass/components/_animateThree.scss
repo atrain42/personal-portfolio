@@ -4,6 +4,7 @@
     margin: 5px 0 0;
     white-space: nowrap;
     z-index: 3;
+    width: 100%;
   
     & span {
         display: inline-block;
@@ -102,12 +103,18 @@
 
 @media (max-width: 500px) {
     .animateLast {
-      font-size: 40px;
+        font-size: 37.5px;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .animateLast {
       font-size: 30px;
     }
 }
+
+@media (max-width: 350px) {
+    .animateLast {
+      font-size: 25px;
+    }
+  }
