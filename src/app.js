@@ -52,15 +52,17 @@ app.get("", (req, res) => {
       },
       {
         head: "React",
-        title: "Using state",
-        description: "Article about state",
-        URL: "test",
+        title: "Optimizing Performance",
+        description:
+          "This article is split into two parts and goes into detail about optimizing the performance of react apps. Learn how to avoid unnecessary re-renders and much more!",
+        URL: "https://piyushsinha.tech/series/optimizing-react?ck_subscriber_id=887757136&utm_campaign=Frontend%2BWeekly&utm_medium=web&utm_source=Frontend_Weekly_311",
       },
       {
-        head: "React",
-        title: "Using state",
-        description: "Article about state",
-        URL: "test",
+        head: "Git",
+        title: "Basic Git Commands",
+        description:
+          "Here, you will find a list of commonly used git commands. As a developer, it is crucial to understand how to use git in order to share code with other developers.",
+        URL: "https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html",
       },
     ],
   });
