@@ -62,3 +62,15 @@ $speed: 0.5s;
     margin-bottom: 2.5rem;
   }
 }
+
+@media (max-width: 550px) {
+  .btn-flip {
+    font-size: 1rem;
+
+    &:before {
+      padding: 0 20px;
+    }
+    
+  }
+
+}

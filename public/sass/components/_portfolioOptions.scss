@@ -102,5 +102,37 @@
             }
         }
     }
+}
+
+@media (max-width: 465px) {
+    .option__container-item {
+        padding: 6rem 2.5rem;
+
+    }
+
+    .option__content {
+        & h1 {
+            font-size: 2.5rem;
+        }
+
+        & p {
+            font-size: 1.35rem;
+
+        }
+    }
+
+}
+
+@media (max-width: 350px) {
+    .option__content {
+        & h1 {
+            font-size: 2rem;
+        }
+
+        & p {
+            font-size: 1.1rem;
+
+        }
+    }
 
 }

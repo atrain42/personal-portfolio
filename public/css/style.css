@@ -620,6 +620,11 @@ textarea {
     align-items: flex-start;
   }
 }
+@media (max-width: 550px) {
+  #long-description {
+    font-size: 1.35rem;
+  }
+}
 #projects {
   padding: 20rem 10rem;
   padding-bottom: 15rem;
@@ -1010,6 +1015,26 @@ footer h3 {
     margin-left: 0rem;
   }
 }
+@media (max-width: 465px) {
+  .option__container-item {
+    padding: 6rem 2.5rem;
+  }
+
+  .option__content h1 {
+    font-size: 2.5rem;
+  }
+  .option__content p {
+    font-size: 1.35rem;
+  }
+}
+@media (max-width: 350px) {
+  .option__content h1 {
+    font-size: 2rem;
+  }
+  .option__content p {
+    font-size: 1.1rem;
+  }
+}
 .btn-flip {
   opacity: 1;
   outline: 0;
@@ -1063,6 +1088,14 @@ footer h3 {
 @media (max-width: 1000px) {
   .btn-flip {
     margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 550px) {
+  .btn-flip {
+    font-size: 1rem;
+  }
+  .btn-flip:before {
+    padding: 0 20px;
   }
 }
 /* Card */
@@ -1931,9 +1964,14 @@ footer h3 {
     font-size: 40px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 550px) {
   .bouncing-header {
-    font-size: 40px;
+    font-size: 32.5px;
+  }
+}
+@media (max-width: 350px) {
+  .bouncing-header {
+    font-size: 25px;
   }
 }
 .fancy-burger {

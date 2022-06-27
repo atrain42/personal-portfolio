@@ -57,8 +57,14 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 550px) {
     .bouncing-header {
-        font-size: 40px;
+        font-size: 32.5px;
+    }
+}
+
+@media (max-width: 350px) {
+    .bouncing-header {
+        font-size: 25px;
     }
 }

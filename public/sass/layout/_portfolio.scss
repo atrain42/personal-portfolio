@@ -39,3 +39,9 @@
         align-items: flex-start;
     }
 }
+
+@media (max-width: 550px) {
+    #long-description {
+        font-size: 1.35rem;
+    }
+}
