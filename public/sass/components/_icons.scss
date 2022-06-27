@@ -11,8 +11,8 @@
 }
 
 .home__icon {
-    height: 55px;
-    width: 55px;
+    height: 10rem;
+    width: 10rem;
     fill: rgb(148, 201, 223);
     transition: all 0.5s;
     padding: 2rem;
@@ -24,9 +24,3 @@
     transform: scale(1.05);
 }
 
-@media (max-width: 600px) {
-    .home__icon {
-        height: 45px;
-        width: 45px;
-    }
-}
