@@ -31,7 +31,7 @@
 .scroll {
     position: absolute;
     bottom: -5%;
-    right: 2%;
+    right: 3.5%;
     z-index: 400;
     display: flex;
     flex-direction: column;
@@ -127,6 +127,15 @@
 
         & p {
             font-size: 2.5rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+
+        & img {
+            margin-top: 7.5rem;
         }
     }
 }
