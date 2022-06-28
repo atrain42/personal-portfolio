@@ -162,3 +162,26 @@
         }
     }
 }
+
+@media (max-width: 465px) {
+    .colored-header {
+        font-size: 1.25rem;
+    }
+    
+    .card__content {
+        padding: 4rem 2rem;
+
+        & h1 {
+            font-size: 2.35rem;
+        }
+
+        & p {
+            font-size: 1.35rem;
+        } 
+        
+        & a {
+            font-size: 1.35rem;
+        }
+    }
+
+}

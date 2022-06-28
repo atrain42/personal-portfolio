@@ -1229,6 +1229,24 @@ footer h3 {
     width: 80vw;
   }
 }
+@media (max-width: 465px) {
+  .colored-header {
+    font-size: 1.25rem;
+  }
+
+  .card__content {
+    padding: 4rem 2rem;
+  }
+  .card__content h1 {
+    font-size: 2.35rem;
+  }
+  .card__content p {
+    font-size: 1.35rem;
+  }
+  .card__content a {
+    font-size: 1.35rem;
+  }
+}
 /* Render Project Cards */
 .project__card {
   display: grid;
