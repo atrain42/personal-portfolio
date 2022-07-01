@@ -639,12 +639,25 @@ textarea {
 }
 #projects {
   padding: 20rem 10rem;
-  padding-bottom: 15rem;
+  padding-bottom: 5rem;
 }
 
 @media (max-width: 1376px) {
   #projects {
-    padding: 10rem 0rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+@media (max-width: 1000px) {
+  #projects {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (max-width: 550px) {
+  #projects {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 /* footer */
@@ -1026,6 +1039,19 @@ textarea {
   z-index: 2;
 }
 
+#p-tag {
+  color: rgb(134, 14, 185);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+#o-tag {
+  color: rgb(145, 83, 2);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .underline:hover::before {
     left: 0;
@@ -1287,10 +1313,13 @@ textarea {
 .project__card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  justify-items: center;
   row-gap: 3rem;
   grid-gap: 23px;
   position: relative;
   z-index: 1;
+  width: 90vw;
 }
 .project__card-item {
   background-color: rgb(71, 83, 85);
@@ -1422,32 +1451,37 @@ textarea {
     width: 26.5vw;
   }
 }
-@media (max-width: 1050px) {
+@media (max-width: 1000px) {
   .project__card {
     grid-template-columns: 1fr 1fr;
+    width: 75vw;
   }
   .project__card-item {
-    width: 35rem;
+    width: 35vw;
   }
 }
-@media (max-width: 875px) {
-  .project__card {
-    grid-template-columns: 1fr 1fr;
-  }
-  .project__card-item {
-    width: 38vw;
-  }
-}
-@media (max-width: 675px) {
+@media (max-width: 750px) {
   .project__card {
     grid-template-columns: 1fr;
+    width: 75vw;
+    grid-gap: 3rem;
   }
   .project__card-item {
     width: 75vw;
   }
+
+  .color-overlay-3 {
+    clip-path: circle(75px at 20% 35%);
+  }
+
+  .color-overlay-4 {
+    clip-path: circle(75px at 80% 70%);
+  }
 }
 .startup {
   padding-top: 20rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 .startup h1 {
   font-size: 3.5rem;
@@ -1496,6 +1530,18 @@ textarea {
   width: 40rem;
 }
 
+@media (max-width: 1000px) {
+  .startup {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (max-width: 550px) {
+  .startup {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
 .option__icon {
   fill: rgb(216, 216, 216);
   height: 30px;

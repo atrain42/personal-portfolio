@@ -2,10 +2,13 @@
 .project__card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    justify-items: center;
     row-gap: 3rem;
     grid-gap: 23px;
     position: relative;
     z-index: 1;
+    width: 90vw;
 
 
     &-item {
@@ -145,30 +148,33 @@
         }
     }
 }
-
-@media (max-width: 1050px) {
+@media (max-width: 1000px) {
     .project__card {
         grid-template-columns: 1fr 1fr;
+        width: 75vw;
+
         &-item {
-            width: 35rem;
+            width: 35vw;
         }
     }
 }
 
-@media (max-width: 875px) {
-    .project__card {
-        grid-template-columns: 1fr 1fr;
-        &-item {
-            width: 38vw;
-        }
-    }
-}
-
-@media (max-width: 675px) {
+@media (max-width: 750px) {
     .project__card {
         grid-template-columns: 1fr;
+        width: 75vw;
+        grid-gap: 3rem;
+
         &-item {
             width: 75vw;
         }
+    }
+
+    .color-overlay-3 {
+        clip-path: circle(75px at 20% 35%);
+    }
+
+    .color-overlay-4 {
+        clip-path: circle(75px at 80% 70%);
     }
 }

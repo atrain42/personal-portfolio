@@ -69,6 +69,20 @@
     clip-path: circle(35% at 70% 70%);
     z-index: 2;
 }
+
+#p-tag {
+    color: rgb(134, 14, 185);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+#o-tag {
+    color: rgb(145, 83, 2);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+  
   
 
 @media (hover: hover) and (pointer: fine) {
