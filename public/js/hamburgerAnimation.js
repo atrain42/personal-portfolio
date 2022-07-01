@@ -3,6 +3,7 @@ const menuBtn = document.querySelector(".fancy-burger");
 const hamburgerMenu = document.querySelector(".menu__container");
 const overlay = document.querySelector(".overlay");
 const hamburgerLinks = document.querySelectorAll(".doink");
+const body = document.querySelector("body");
 
 export class HamburgerClass {
   constructor() {
@@ -19,6 +20,7 @@ export class HamburgerClass {
       .forEach((span) => span.classList.toggle("open"));
     hamburgerMenu.classList.toggle("hidden-menu");
     overlay.classList.toggle("hide-overlay");
+    body.classList.toggle("hide-overflow");
   }
 }
 const app = new HamburgerClass();
