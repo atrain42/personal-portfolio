@@ -4,6 +4,7 @@
     justify-content: center;
     margin: 0 auto;
 
+
     &-item {
         // height: 35rem;
         width: 50rem;
@@ -94,6 +95,20 @@
     }
 }
 
+@media (orientation: landscape) and (min-width: 1600px) {
+    .option__container {
+        &-item {
+            &:nth-child(1) {
+                margin-right: 10rem;
+            }
+    
+            &:nth-child(2) {
+                margin-left: 10rem;
+            }
+        }
+    }
+
+}
 
 
 @media (max-width: 1150px) {
