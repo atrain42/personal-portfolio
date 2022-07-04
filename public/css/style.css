@@ -103,6 +103,7 @@ body {
   top: 0;
   width: 100vw;
   overflow-x: hidden;
+  overflow-y: hidden;
   max-width: 100vw;
   border-bottom: 1px solid rgb(175, 175, 175);
 }
@@ -672,6 +673,7 @@ textarea {
   max-width: 100vw;
   z-index: 100;
   position: relative;
+  margin-top: 5rem;
 }
 .footer img {
   fill: rgb(227, 227, 227);
@@ -1449,7 +1451,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   position: relative;
-  z-index: 4;
+  z-index: 50;
 }
 
 @media (max-width: 1376px) {
@@ -1629,37 +1631,6 @@ textarea {
     margin-bottom: 7rem;
     height: 32.5rem;
     width: auto;
-  }
-}
-.option__icon {
-  fill: rgb(216, 216, 216);
-  height: 30px;
-  width: 30px;
-  padding: 3rem 3rem;
-  transition: all 0.5s;
-}
-.option__icon:hover {
-  fill: rgb(0, 213, 255);
-}
-
-.home__icon {
-  height: 10rem;
-  width: 10rem;
-  fill: rgb(148, 201, 223);
-  transition: all 0.5s;
-  padding: 2rem;
-  z-index: 2000;
-}
-
-.home__icon:hover {
-  fill: rgb(99, 175, 252);
-  transform: scale(1.05);
-}
-
-@media (max-width: 500px) {
-  .home__icon {
-    height: 8rem;
-    width: 8rem;
   }
 }
 .loader__outer {
@@ -2325,6 +2296,35 @@ textarea {
 
   .doink {
     font-size: 3rem;
+  }
+}
+.option__icon {
+  fill: rgb(216, 216, 216);
+  padding: 3rem 3rem;
+  transition: all 0.5s;
+}
+.option__icon:hover {
+  fill: rgb(0, 213, 255);
+}
+
+.home__icon {
+  height: 10rem;
+  width: 10rem;
+  fill: rgb(148, 201, 223);
+  transition: all 0.5s;
+  padding: 2rem;
+  z-index: 2000;
+}
+
+.home__icon:hover {
+  fill: rgb(99, 175, 252);
+  transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+  .home__icon {
+    height: 8rem;
+    width: 8rem;
   }
 }
 @keyframes pop {
