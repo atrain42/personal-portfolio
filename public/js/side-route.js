@@ -8,3 +8,11 @@ window.addEventListener("load", function () {
 });
 
 import { HamburgerClass } from "./hamburgerAnimation.js";
+
+// if on /about route, remove the anchor link below the text
+const aboutRoute = window.location.href;
+const buttonFlip = document.querySelector(".btn-flip");
+
+if (aboutRoute.includes("/about")) {
+  buttonFlip.style.display = "none";
+}
