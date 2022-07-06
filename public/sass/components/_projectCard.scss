@@ -179,3 +179,10 @@
         clip-path: circle(75px at 80% 70%);
     }
 }
+
+@media (max-width: 550px) {
+    #alert {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
