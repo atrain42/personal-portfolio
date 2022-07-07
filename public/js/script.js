@@ -4,9 +4,7 @@ import { HamburgerClass } from "./hamburgerAnimation.js";
 const loader = document.querySelector(".loader__outer");
 
 window.addEventListener("load", function () {
-  setTimeout(function () {
-    loader.style.display = "none";
-  }, 1500);
+  loader.style.display = "none";
 });
 
 // Reveal sections
