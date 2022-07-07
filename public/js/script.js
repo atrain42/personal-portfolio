@@ -4,7 +4,9 @@ import { HamburgerClass } from "./hamburgerAnimation.js";
 const loader = document.querySelector(".loader__outer");
 
 window.addEventListener("load", function () {
-  loader.style.display = "none";
+  setTimeout(function () {
+    loader.style.display = "none";
+  }, 500);
 });
 
 // Reveal sections
@@ -79,16 +81,6 @@ skillPercentageStatus.forEach((bar) => {
   skillsPercentObserver.observe(bar);
 });
 
-// Display loading screen when link is pressed
-const anchors = document.querySelectorAll(".anchor-site");
-const articleLoader = document.querySelector(".article__loader-outer");
-
-anchors.forEach((anchor) => {
-  anchor.addEventListener("click", function () {
-    articleLoader.classList.remove("hide-load");
-  });
-});
-
-window.addEventListener("pageshow", function () {
-  articleLoader.classList.add("hide-load");
-});
+import { anchorAnimation, windowAnimation } from "./ArticleLoadAnimation.js";
+anchorAnimation();
+windowAnimation();

@@ -16,3 +16,7 @@ const buttonFlip = document.querySelector(".btn-flip");
 if (aboutRoute.includes("/about")) {
   buttonFlip.style.display = "none";
 }
+
+import { anchorAnimation, windowAnimation } from "./ArticleLoadAnimation.js";
+anchorAnimation();
+windowAnimation();

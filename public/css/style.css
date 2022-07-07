@@ -2340,19 +2340,6 @@ textarea {
     width: 8rem;
   }
 }
-.thanks {
-  width: 100vw;
-  height: 100vh;
-  background-color: #01443e;
-  position: relative;
-}
-.thanks__container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 @keyframes pop {
   60% {
     transform: translate(0, 20px) rotate(-180deg) scale(0.5);
