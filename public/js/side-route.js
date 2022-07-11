@@ -20,3 +20,13 @@ if (aboutRoute.includes("/about")) {
 import { anchorAnimation, windowAnimation } from "./ArticleLoadAnimation.js";
 anchorAnimation();
 windowAnimation();
+
+const viewBtn = document.querySelector(".viewBtn");
+// const lessonsList = document.querySelector(".robotics-content ul");
+const lessonsItem = document.querySelectorAll(".robotics-content ul li");
+
+viewBtn.addEventListener("click", () => {
+  lessonsItem.forEach((item) => {
+    item.style.display = "block";
+  });
+});

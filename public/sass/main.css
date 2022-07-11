@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
-@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Baskervville&family=Montserrat:wght@200;300;400;500;600&family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Baskervville&family=Montserrat:wght@200;300;400;500;600&family=Inter:wght@400;500;700&family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -400,6 +400,7 @@ hr {
   line-height: 1.6;
   width: 50rem;
   color: #eee;
+  margin-bottom: 2.5rem;
 }
 
 .about-overlay {
@@ -1824,6 +1825,13 @@ textarea {
   }
 }
 
+@media (max-width: 550px) {
+  #alert {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
 .startup {
   padding-top: 20rem;
   padding-left: 10rem;
@@ -2251,6 +2259,92 @@ textarea {
   }
 }
 
+.robotics {
+  padding: 15rem 10rem;
+  padding-bottom: 0rem;
+  position: relative;
+}
+
+.robotics img {
+  width: 45rem;
+  height: auto;
+}
+
+.robotics-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  background-color: #4161862f;
+  -webkit-clip-path: circle(250px at 70% 60%);
+          clip-path: circle(250px at 70% 60%);
+  z-index: 2;
+}
+
+#fullwidth-description {
+  width: 80vw;
+  margin-bottom: 5rem;
+  color: #eee;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.robotics-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5rem;
+}
+
+.robotics-content__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40rem;
+  z-index: 2;
+}
+
+.robotics-content__text h2 {
+  color: #1fa0ba;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.robotics-content__text button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  border: 1px solid #e3e3e3;
+  color: #00d5ff;
+  cursor: pointer;
+}
+
+.robotics-content ul {
+  margin-top: 4rem;
+}
+
+.robotics-content ul li {
+  color: #e3e3e3;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  -webkit-transition: all 6s;
+  transition: all 6s;
+  display: none;
+  -webkit-animation: fade 2s ease-in;
+          animation: fade 2s ease-in;
+}
+
 /* First line of text in header */
 .animate {
   font-size: 65px;
@@ -2595,7 +2689,7 @@ textarea {
 /* bouncing headers */
 .bouncing-header {
   font-size: 50px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2605,72 +2699,6 @@ textarea {
   -webkit-animation: appear 4s;
           animation: appear 4s;
   margin-bottom: 2rem;
-}
-
-.bouncing-header span {
-  display: inline-block;
-  -webkit-animation: bounce 4s linear infinite;
-          animation: bounce 4s linear infinite;
-}
-
-.bouncing-header span:nth-child(1) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-.bouncing-header span:nth-child(2) {
-  -webkit-animation-delay: 0.05s;
-          animation-delay: 0.05s;
-}
-
-.bouncing-header span:nth-child(3) {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-
-.bouncing-header span:nth-child(4) {
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
-}
-
-.bouncing-header span:nth-child(5) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.bouncing-header span:nth-child(6) {
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
-}
-
-.bouncing-header span:nth-child(7) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.bouncing-header span:nth-child(8) {
-  -webkit-animation-delay: 0.35s;
-          animation-delay: 0.35s;
-}
-
-.bouncing-header span:nth-child(9) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.bouncing-header span:nth-child(10) {
-  -webkit-animation-delay: 0.45s;
-          animation-delay: 0.45s;
-}
-
-.bouncing-header span:nth-child(11) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.bouncing-header span:nth-child(12) {
-  -webkit-animation-delay: 0.55s;
-          animation-delay: 0.55s;
 }
 
 @media (max-width: 850px) {
@@ -2845,6 +2873,18 @@ textarea {
 
 .hidden-menu {
   display: none;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.unhide-menu {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 #hamburger-line {

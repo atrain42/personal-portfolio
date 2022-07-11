@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
-@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Baskervville&family=Montserrat:wght@200;300;400;500;600&family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Baskervville&family=Montserrat:wght@200;300;400;500;600&family=Inter:wght@400;500;700&family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1823,6 +1823,194 @@ textarea {
     opacity: 0;
   }
 }
+.robotics {
+  padding: 15rem 10rem;
+  padding-bottom: 0rem;
+  position: relative;
+  max-width: 100vw;
+}
+.robotics img {
+  width: 45rem;
+  height: auto;
+}
+
+.robotics-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  background-color: rgba(65, 97, 134, 0.1843137255);
+  clip-path: circle(250px at 70% 60%);
+  z-index: 2;
+}
+
+#fullwidth-description {
+  width: 80vw;
+  margin-bottom: 5rem;
+  color: #eee;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.robotics-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.robotics-content__text {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  z-index: 2;
+}
+.robotics-content__text h2 {
+  color: rgb(31, 160, 186);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 1.75rem;
+}
+.robotics-content__text button {
+  align-self: flex-start;
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  border: 1px solid rgb(227, 227, 227);
+  color: rgb(0, 213, 255);
+  cursor: pointer;
+}
+.robotics-content ul {
+  margin-top: 4rem;
+  height: 20rem;
+  width: 100%;
+}
+.robotics-content ul li {
+  color: rgb(227, 227, 227);
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  transition: all 6s;
+  display: none;
+  animation: fade 2s ease-in;
+}
+
+@media (max-width: 1150px) {
+  .robotics img {
+    width: 40rem;
+    height: auto;
+  }
+
+  .robotics-content {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1000px) {
+  .robotics {
+    padding-bottom: 10rem;
+  }
+
+  #fullwidth-description {
+    width: 100%;
+  }
+
+  .robotics {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .robotics img {
+    width: 32.5rem;
+    height: auto;
+  }
+
+  .robotics-content__text h2 {
+    color: rgb(31, 160, 186);
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 1.75rem;
+  }
+}
+@media (max-width: 850px) {
+  .robotics img {
+    width: 27.5rem;
+    height: auto;
+  }
+
+  .robotics-content__text h2 {
+    color: rgb(31, 160, 186);
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 1.75rem;
+  }
+  .robotics-content__text ul li {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .robotics img {
+    width: 40rem;
+    height: auto;
+  }
+  .robotics h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
+
+  .robotics-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .robotics-content__text ul li {
+    font-size: 1.75rem;
+  }
+  .robotics-content button {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 550px) {
+  .robotics {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .robotics img {
+    width: 30rem;
+    height: auto;
+  }
+  .robotics h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    white-space: nowrap;
+  }
+
+  #fullwidth-description {
+    font-size: 1.35rem;
+    width: 82.5vw;
+  }
+}
+@media (max-width: 450px) {
+  .robotics img {
+    width: 27.5rem;
+    height: auto;
+  }
+  .robotics h2 {
+    text-align: center;
+    font-size: 1.65rem;
+    white-space: nowrap;
+  }
+  .robotics-content__text ul {
+    padding-left: 5rem;
+  }
+  .robotics-content__text ul li {
+    font-size: 1.35rem;
+  }
+
+  #fullwidth-description {
+    font-size: 1.35rem;
+    width: 82.5vw;
+  }
+}
 /* First line of text in header */
 .animate {
   font-size: 65px;
@@ -2078,52 +2266,12 @@ textarea {
 /* bouncing headers */
 .bouncing-header {
   font-size: 50px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   user-select: none;
   color: rgb(0, 213, 255);
   animation: appear 4s;
   margin-bottom: 2rem;
-}
-.bouncing-header span {
-  display: inline-block;
-  animation: bounce 4s linear infinite;
-}
-.bouncing-header span:nth-child(1) {
-  animation-delay: 0s;
-}
-.bouncing-header span:nth-child(2) {
-  animation-delay: 0.05s;
-}
-.bouncing-header span:nth-child(3) {
-  animation-delay: 0.1s;
-}
-.bouncing-header span:nth-child(4) {
-  animation-delay: 0.15s;
-}
-.bouncing-header span:nth-child(5) {
-  animation-delay: 0.2s;
-}
-.bouncing-header span:nth-child(6) {
-  animation-delay: 0.25s;
-}
-.bouncing-header span:nth-child(7) {
-  animation-delay: 0.3s;
-}
-.bouncing-header span:nth-child(8) {
-  animation-delay: 0.35s;
-}
-.bouncing-header span:nth-child(9) {
-  animation-delay: 0.4s;
-}
-.bouncing-header span:nth-child(10) {
-  animation-delay: 0.45s;
-}
-.bouncing-header span:nth-child(11) {
-  animation-delay: 0.5s;
-}
-.bouncing-header span:nth-child(12) {
-  animation-delay: 0.55s;
 }
 
 @media (max-width: 850px) {
