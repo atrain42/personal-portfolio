@@ -997,6 +997,7 @@ textarea {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 .option__container-item {
   width: 50rem;
