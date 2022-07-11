@@ -12,6 +12,8 @@
     height: 100%;
     width: 100%;
     clip-path: circle(125px at 25% 20%);
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .article-overlay-2 {
@@ -23,6 +25,8 @@
     height: 100%;
     width: 100%;
     clip-path: circle(200px at 65% 60%);
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 
