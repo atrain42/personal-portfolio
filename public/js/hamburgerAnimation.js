@@ -1,6 +1,6 @@
 /* Show menu on hamburger button press */
 const menuBtn = document.querySelector(".fancy-burger");
-const hamburgerMenu = document.querySelector(".menu__container");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
 const hamburgerLinks = document.querySelectorAll(".doink");
 const body = document.querySelector("body");
 
@@ -17,8 +17,7 @@ export class HamburgerClass {
     menuBtn
       .querySelectorAll("span")
       .forEach((span) => span.classList.toggle("open"));
-    hamburgerMenu.style.display = "inline";
-    hamburgerMenu.classList.toggle("unhide-menu");
+    hamburgerMenu.classList.toggle("hide-menu");
     body.classList.toggle("hide-overflow");
   }
 }

@@ -1,0 +1,140 @@
+.hamburger-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 999;
+    background-color: #333;
+    padding: 20rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hamburger-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(81, 81, 81);
+    height: 100vh;
+    width: 100vw;
+    clip-path: circle(275px at 84% 15%);
+}
+
+.anchor-bin {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+    z-index: 2;
+    & a {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        color: rgb(227, 227, 227);
+        text-decoration: none;
+        font-size: 6rem;
+        margin-bottom: 4rem;
+        white-space: nowrap;
+
+        &:nth-child(4) {
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+.hamburger-info {
+    margin-left: 10rem;
+    z-index: 2;
+    position: relative;
+
+    &__content {
+        &:nth-child(1) {
+            margin-bottom: 8rem;
+        }
+        & h1 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            color: rgb(227, 227, 227);
+            font-size: 2.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        & p {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            color: rgb(227, 227, 227);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    & a {
+        color: rgb(227, 227, 227);
+    }
+
+}
+
+#title {
+    position: absolute;
+    top: 5%;
+    left: 7.5%;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: rgb(227, 227, 227);
+    z-index: 2;
+}
+
+.hide-menu {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .hamburger-menu {
+        padding: 15rem 0rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 5rem;
+    }
+
+    .hamburger-info {
+        margin-left: 0rem;
+    }
+
+    .anchor-bin {
+        margin-bottom: 8rem;
+        & a {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+    
+            &:nth-child(4) {
+                margin-bottom: 0;
+            }
+    
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .hamburger-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip-path: circle(200px at 84% 15%);
+    }
+
+}
+
+@media (max-width: 375px) {
+    .hamburger-menu {
+        padding-left: 2.5rem;
+    }
+
+    .hamburger-info__content {
+        & p {
+            font-size: 1.35rem;
+        }
+        
+    }
+
+}
