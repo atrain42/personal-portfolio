@@ -34,6 +34,7 @@
         font-size: 6rem;
         margin-bottom: 4rem;
         white-space: nowrap;
+        transition: all 0.5s;
 
         &:nth-child(4) {
             margin-bottom: 0;
@@ -87,6 +88,13 @@
 
 .hide-menu {
     display: none;
+}
+
+@media (hover: hover) {
+    .anchor-bin a:hover {
+        color: $color-primary;
+
+    }
 }
 
 @media (max-width: 850px) {

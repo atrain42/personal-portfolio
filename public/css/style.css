@@ -1686,6 +1686,7 @@ textarea {
   font-size: 6rem;
   margin-bottom: 4rem;
   white-space: nowrap;
+  transition: all 0.5s;
 }
 .anchor-bin a:nth-child(4) {
   margin-bottom: 0;
@@ -1732,6 +1733,11 @@ textarea {
   display: none;
 }
 
+@media (hover: hover) {
+  .anchor-bin a:hover {
+    color: rgb(0, 213, 255);
+  }
+}
 @media (max-width: 850px) {
   .hamburger-menu {
     padding: 15rem 0rem;
