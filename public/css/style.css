@@ -635,6 +635,33 @@ textarea {
   overflow-x: hidden;
 }
 
+.sort-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.sort-btn {
+  font-family: "Inter", sans-serif;
+  width: 12.5rem;
+  background-color: transparent;
+  padding: 1rem 0;
+  border: 1px solid rgb(0, 213, 255);
+  color: #eee;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+#javascript {
+  margin: 0rem 3rem;
+}
+
+@media (hover: hover) {
+  .sort-btn:hover {
+    background-color: rgba(0, 0, 0, 0.444);
+    border-radius: 20px;
+  }
+}
 @media (max-width: 1050px) {
   #long-description {
     width: 100%;
@@ -646,9 +673,28 @@ textarea {
     align-items: flex-start;
   }
 }
+@media (max-width: 600px) {
+  .sort-btn {
+    width: 10rem;
+  }
+
+  #javascript {
+    margin: 0rem 1.5rem;
+  }
+}
 @media (max-width: 550px) {
   #long-description {
     font-size: 1.35rem;
+  }
+
+  .sort-btn {
+    width: 8rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .sort-btn {
+    width: 6.5rem;
   }
 }
 #projects {
